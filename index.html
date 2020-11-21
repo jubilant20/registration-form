@@ -1,0 +1,126 @@
+<html>
+<body bgcolor="grey"> 
+<head>
+<title>registration form</title>
+</head>
+<body>
+	<center><h1><u>Registration Form</u></h1></center>
+	<form action="" method="POST" style="border:2px solid #ccc">
+	<center>
+	<div style="background-color:white">
+	<label>First Name</label>
+	<input type="text" name="First Name"id="First Name">
+	<br><br>
+	<label>Last Name</label>
+	<input type="text" name="Last Name"id="Last Name">
+	<br><br>
+	<label>Nick Name</label>
+	<input type="text" name="Nick Name"id="Nick Name">
+	<br><br>
+	<label>e-mail</label>
+	<input type="text" name="e-mail"id="e-mail">
+	<br><br>
+	<label>Password</label>
+	<input type="password" name="password" id="password">
+	<br><br>
+	<label>Date Of Birth</label>
+	<input type="date"name="DOB" id="DOB">
+	<br><br>
+	<lebal>Gender</lebael>
+		<input type="radio"id="gender"name="gender">
+		<label>Male</label>
+		<input type="radio"id="gender" name="gender">
+		<label>female</label>
+		<input type="radio"id="gender" name="gender">
+		<label>other</label>
+		<input type="radio"id="gender" name="gender">
+	<br><br>
+	<label>Address</label>	
+	<textarea name="address"id="address"?></textarea>
+	<br><br>
+	<label>Mobile</label>
+	<input type="number" name="Mobile"id="Mobile">
+	<br><br>
+	<input type="submit" name="submit">
+	<input type="reset" name="reset">
+
+    </center>
+	</form>
+	</body>	
+
+<script type="text/javascript">
+  function validate()
+  {
+    var First Name=document.getElementById("First Name").value.trim();
+    var Last Name=document.getElementById("Last Nameame").value.trim();
+    var Nick Name=document.getElementById("Nick Name").value.trim();
+    var e-mail=document.getElementById("e-mail").value.trim();
+    var Password=document.getElementById("Pssword").value.trim();
+    var gender=document.getElementById("gender").value.trim();
+    var address=document.getElementById("address").value.trim();
+    var mobile=document.getElementById("mobile").value.trim();
+
+    if(First Name=="")
+    {
+     //alert("First Name required"); 
+     document.getElementById("sp1").innerHTML="First Name required";
+     return false;
+    }
+    if(Last Name=="")
+    {
+      //alert("Last Name required");
+      document.getElementById("sp2").innerHTML="Last name required";
+      return false;
+    }
+    if (Nick Name=="")
+    {
+    	//alert("Nick Name required");
+    	document.getElementById("sp3").innerHTML="Nick Name required";
+    	return false;
+    }
+    if(e-mail=="")
+    {
+      //alert("e-mail required");
+      document.getElementById("sp4").innerHTML="e-mail required";
+      return false;
+    }
+    if(Password=="")
+    {
+    	//alert("Password required");
+    	document.getElementById("sp5").innerHTML="Password required";
+    	return false;
+    }
+    if(gender=="")
+    {
+    	//alert("gender required");
+    	document.getElementById("sp6").innerHTML="gender required";
+    	return false;
+    }
+    if(address=="")
+    {
+    	//alert("address required");
+    	document.getElementById("sp7").innerHTML="address required";
+    	return false;
+    }
+    if(mobile=="")
+    {
+    	//alert("mobile required");
+    	document.getElementById("sp8").innerHTML="mobile required";
+    	return false;
+    }
+
+  }
+
+  function clearmsg(sp)
+  {
+    document.getElementById(sp).innerHTML="";
+  }
+</script>
+</html>
+
+
+
+
+
+
+
